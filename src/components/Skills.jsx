@@ -4,10 +4,12 @@ import { BsCircle } from "react-icons/bs";
 
 const Skills = () => {
   return (
-    <div className="w-full min-h-screen flex items-center">
-      <div className="max-w-[1240px] m-auto px-5 py-6">
+    <div name="skills" className="w-full min-h-screen flex items-center">
+      <div className="container mx-auto px-5 py-6 lg:px-10">
         <div className="sm:w-3/5">
-          <h2 className="text-4xl font-bold text-primary">My Skills</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold text-primary">
+            My Skills
+          </h2>
           <p className="text-secondary my-12">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consectetur dicta ex voluptas praesentium, voluptatibus ut ea

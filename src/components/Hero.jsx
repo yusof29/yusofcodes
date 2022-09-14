@@ -6,17 +6,25 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-screen flex items-center">
-      <div className="max-w-[1240px] m-auto px-5 py-6 relative mt-32">
-        <ImQuotesLeft
-          className="text-gray-100 absolute left-[20px] top-[-60px]"
-          size={150}
-        />
+    <main name="hero" className="w-full min-h-screen flex items-center">
+      <div className="container mx-auto px-5 py-6 lg:px-10 relative mt-24 md:mt-32">
+        {/* className="max-w-[1240px] m-auto px-5 py-6 relative mt-24 md:mt-32" */}
+        <motion.areadiv
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1.5 }}
+        >
+          <ImQuotesLeft
+            className="text-gray-100 absolute
+        left-[20px] top-[-30px] w-24 h-24
+        md:left-[20px] md:top-[-60px] md:w-36 md:h-36"
+          />
+        </motion.areadiv>
 
         {/* name div */}
         <div className="text-primary md:ml-10 md:mb-10">
           <motion.h1
-            className="text-4xl md:text-7xl font-semibold py-2"
+            className="text-3xl md:text-7xl font-semibold py-2"
             initial={{ y: "-100vh" }}
             animate={{ y: 0 }}
             transition={{ delay: 0.3, duration: 1.5 }}
@@ -25,7 +33,7 @@ const Hero = () => {
           </motion.h1>
 
           <motion.h1
-            className="text-4xl md:text-7xl font-semibold py-2"
+            className="text-3xl md:text-7xl font-semibold py-2"
             initial={{ y: "-100vh" }}
             animate={{ y: 0 }}
             transition={{ duration: 1.5 }}
@@ -66,7 +74,12 @@ const Hero = () => {
         </motion.div>
 
         {/* about div */}
-        <div className="grid md:grid-cols-2 gap-x-36 gap-y-6 md:gap-y-12 mt-6">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1.5 }}
+          className="grid md:grid-cols-2 gap-x-36 gap-y-6 md:gap-y-12 mt-6"
+        >
           <p className="text-secondary font-light">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic iste
             placeat incidunt praesentium, sapiente eius perferendis saepe ipsum
@@ -84,9 +97,9 @@ const Hero = () => {
             placeat incidunt praesentium, sapiente eius perferendis saepe ipsum
             illo vel.
           </p>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -1,11 +1,13 @@
 import React from "react";
 
+import { Link } from "react-scroll";
+
 const Contact = () => {
   return (
-    <div className="w-full min-h-screen">
-      <div className="max-w-[1240px] m-auto px-5 pt-28 pb-20">
+    <div name="contact" className="w-full min-h-screen">
+      <div className="container mx-auto px-5 pt-28 pb-20 lg:px-10">
         <div className="sm:w-3/5">
-          <h2 className="text-4xl font-bold text-primary">
+          <h2 className="text-2xl lg:text-4xl font-bold text-primary">
             Let's Build Something Together
           </h2>
           <p className="text-secondary my-12">
@@ -55,31 +57,36 @@ const Contact = () => {
         </div>
 
         <div className="mt-20 flex justify-between items-center">
-          <div>
-            <a href="/" title="Home - Yusof Paciente">
+          <div className="cursor-pointer">
+            <Link
+              to="hero"
+              smooth={true}
+              duration={500}
+              title="Home - Yusof Paciente"
+            >
               <h1 className="font-bold text-sm font-arvo text-primary">YU</h1>
               <h1 className="font-bold text-sm font-arvo text-primary">SOF.</h1>
-            </a>
+            </Link>
           </div>
 
           <div>
             <div className="flex space-x-8 text-base text-secondary">
               <a
-                className="hover:text-primary hover:drop-shadow-xl border-transparent border-b-2 hover:border-primary transition ease-in duration-300"
+                className="hover:text-[#0072b1] hover:drop-shadow-xl"
                 href="https://www.linkedin.com/in/yusofpaciente"
                 title="Linkedin Account"
               >
                 linkedin
               </a>
               <a
-                className="hover:text-primary hover:drop-shadow-xl border-transparent border-b-2 hover:border-primary transition ease-in duration-300"
+                className="hover:text-[#171515] hover:drop-shadow-xl"
                 href="https://github.com/yusof29"
                 title="Github Repository"
               >
                 github
               </a>
               <a
-                className="hover:text-primary hover:drop-shadow-xl border-transparent border-b-2 hover:border-primary transition ease-in duration-300"
+                className="hover:text-[#4267B2] hover:drop-shadow-xl"
                 href="https://www.facebook.com/noeyeat"
                 title="Facebook - Yusof Paciente"
               >

@@ -4,9 +4,9 @@ const data = [
   {
     id: 1,
     img: imagesData.sampleImg,
-    title: "Project 1",
+    title: "Real-Time Fire Detection System",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optiocorporis.",
+      "Capstone project created for Bureau of Fire Protection that responsible for the prevention and suppression of all destructive fires.",
   },
   {
     id: 2,
