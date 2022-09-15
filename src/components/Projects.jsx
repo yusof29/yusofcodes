@@ -6,13 +6,13 @@ import data from "../data";
 
 const Projects = () => {
   return (
-    <div name="projects" className="w-full min-h-screen">
-      <div className="container mx-auto px-5 py-6 lg:px-10">
+    <section name="projects" className="w-full min-h-screen flex items-center">
+      <div className="container mx-auto py-6 px-5 lg:px-10">
         <div className="sm:w-3/5">
-          <h2 className="text-2xl lg:text-4xl font-bold text-primary">
+          <h2 className="text-2xl lg:text-4xl font-bold text-lightprimary dark:text-darkprimary">
             What I've been working on
           </h2>
-          <p className="text-secondary my-12">
+          <p className="text-lightsecondary dark:text-darksecondary my-12">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consectetur dicta ex voluptas praesentium, voluptatibus ut ea
             dolorum maiores vitae ipsa distinctio exercitationem nulla, dolorem
@@ -32,27 +32,27 @@ const Projects = () => {
                   src={project.img}
                   alt="/"
                 />
-                <h3 className="text-xl lg:text-3xl tracking-wide font-semibold text-primary py-2">
+                <h3 className="text-xl lg:text-3xl tracking-wide font-semibold py-2 text-lightprimary dark:text-darkprimary">
                   {project.title}
                 </h3>
-                <p className="text-secondary py-4 max-w-[380px]">
+                <p className="text-lightsecondary dark:text-darksecondary py-4 max-w-[380px]">
                   {project.description}
                 </p>
-                <div className="flex flex-row items-center">
+                <div className="flex items-center text-lightprimary dark:text-darkprimary">
                   <a
-                    className="text-[15px] tracking-wide uppercase text-md text-primary font-medium border-transparent border-b-2 group-hover:border-primary transition ease-in duration-300 w-max"
+                    className="text-[15px] tracking-wide uppercase text-md font-medium border-transparent border-b-2 group-hover:border-lightprimary dark:group-hover:border-darkprimary transition ease-in duration-300 w-max"
                     href="/"
                   >
                     View Project
                   </a>
-                  <IoIosArrowForward />
+                  <IoIosArrowForward className="mb-0.5" />
                 </div>
               </div>
             );
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

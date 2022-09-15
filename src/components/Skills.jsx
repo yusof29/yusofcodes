@@ -4,13 +4,13 @@ import { BsCircle } from "react-icons/bs";
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full min-h-screen flex items-center">
-      <div className="container mx-auto px-5 py-6 lg:px-10">
+    <section name="skills" className="w-full min-h-screen flex items-center">
+      <div className="container mx-auto py-6 px-5 lg:px-10">
         <div className="sm:w-3/5">
-          <h2 className="text-2xl lg:text-4xl font-bold text-primary">
+          <h2 className="text-2xl lg:text-4xl font-bold text-lightprimary dark:text-darkprimary">
             My Skills
           </h2>
-          <p className="text-secondary my-12">
+          <p className="text-lightsecondary dark:text-darksecondary my-12">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consectetur dicta ex voluptas praesentium, voluptatibus ut ea
             dolorum maiores vitae ipsa distinctio exercitationem nulla, dolorem
@@ -18,7 +18,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="text-primary font-semibold">
+        <div className="text-lightprimary dark:text-darkprimary font-semibold">
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             <li className="flex items-center py-2 tracking-wide">
               <BsCircle className="mr-2 w-3 text-sky-300" />
@@ -43,7 +43,7 @@ const Skills = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

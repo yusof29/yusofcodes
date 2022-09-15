@@ -1,16 +1,14 @@
 import React from "react";
 
-import { Link } from "react-scroll";
-
 const Contact = () => {
   return (
-    <div name="contact" className="w-full min-h-screen">
-      <div className="container mx-auto px-5 pt-28 pb-20 lg:px-10">
+    <section name="contact" className="w-full min-h-screen flex items-center">
+      <div className="container mx-auto py-6 px-5 lg:px-10 my-10 lg:my-32">
         <div className="sm:w-3/5">
-          <h2 className="text-2xl lg:text-4xl font-bold text-primary">
+          <h2 className="text-2xl lg:text-4xl font-bold text-lightprimary dark:text-darkprimary">
             Let's Build Something Together
           </h2>
-          <p className="text-secondary my-12">
+          <p className="text-lightsecondary dark:text-darksecondary my-12">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consectetur dicta ex voluptas praesentium, voluptatibus ut ea
             dolorum maiores vitae ipsa distinctio exercitationem nulla, dolorem
@@ -18,13 +16,13 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex justify-center mt-3">
+        <div className="flex justify-center">
           <form className="flex flex-col max-w-[600px] w-full">
             <div className="text-center">
-              <p className="py-6 text-secondary">
+              <p className="py-6 text-lightsecondary dark:text-darksecondary">
                 Submit the form below or shoot me an email
                 <a
-                  className="text-primary ml-2 py-1 font-bold border-transparent border-b-2 hover:border-primary transition ease-in duration-300"
+                  className="text-lightprimary dark:text-darkprimary ml-2 py-1 font-bold border-transparent border-b-2 hover:border-lightprimary dark:hover:border-darksecondary transition ease-in duration-300"
                   href="/"
                 >
                   yusofpaciente29@gmail.com
@@ -50,53 +48,13 @@ const Contact = () => {
               placeholder="Message"
               name="message"
             ></textarea>
-            <button className="bg-sky-300 text-white rounded-lg border-2 px-4 py-3 my-4 mx-auto hover:bg-sky-400 hover:border-sky-300 transition ease-in duration-300">
+            <button className="bg-sky-400 text-white rounded-lg border-2 px-4 py-3 my-4 mx-auto hover:bg-sky-500 hover:border-sky-400 transition ease-in duration-300">
               Let's Collaborate
             </button>
           </form>
         </div>
-
-        <div className="mt-20 flex justify-between items-center">
-          <div className="cursor-pointer">
-            <Link
-              to="hero"
-              smooth={true}
-              duration={500}
-              title="Home - Yusof Paciente"
-            >
-              <h1 className="font-bold text-sm font-arvo text-primary">YU</h1>
-              <h1 className="font-bold text-sm font-arvo text-primary">SOF.</h1>
-            </Link>
-          </div>
-
-          <div>
-            <div className="flex space-x-8 text-base text-secondary">
-              <a
-                className="hover:text-[#0072b1] hover:drop-shadow-xl"
-                href="https://www.linkedin.com/in/yusofpaciente"
-                title="Linkedin Account"
-              >
-                linkedin
-              </a>
-              <a
-                className="hover:text-[#171515] hover:drop-shadow-xl"
-                href="https://github.com/yusof29"
-                title="Github Repository"
-              >
-                github
-              </a>
-              <a
-                className="hover:text-[#4267B2] hover:drop-shadow-xl"
-                href="https://www.facebook.com/noeyeat"
-                title="Facebook - Yusof Paciente"
-              >
-                facebook
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
