@@ -7,14 +7,13 @@ const Skills = () => {
     <section name="skills" className="w-full min-h-screen flex items-center">
       <div className="container mx-auto py-6 px-5 lg:px-10">
         <div className="sm:w-3/5">
-          <h2 className="text-2xl lg:text-4xl font-bold text-lightprimary dark:text-darkprimary">
+          <h2 className="text-2xl lg:text-4xl font-bold text-sky-400 tracking-wider">
             My Skills
           </h2>
           <p className="text-lightsecondary dark:text-darksecondary my-12">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consectetur dicta ex voluptas praesentium, voluptatibus ut ea
-            dolorum maiores vitae ipsa distinctio exercitationem nulla, dolorem
-            vero pariatur optio nihil laboriosam sint.
+            I develop web applications using these languages and frameworks. I
+            am always excited by new technologies, therefore, I do not hesitate
+            to take up coding task.
           </p>
         </div>
 
@@ -30,11 +29,15 @@ const Skills = () => {
             </li>
             <li className="flex items-center py-2 tracking-wide">
               <BsCircle className="mr-2 w-3 text-sky-300" />
-              HTML & CSS
+              Tailwind CSS
             </li>
             <li className="flex items-center py-2 tracking-wide">
               <BsCircle className="mr-2 w-3 text-sky-300" />
-              Tailwind CSS
+              Styled Components
+            </li>
+            <li className="flex items-center py-2 tracking-wide">
+              <BsCircle className="mr-2 w-3 text-sky-300" />
+              HTML & CSS
             </li>
             <li className="flex items-center py-2 tracking-wide">
               <BsCircle className="mr-2 w-3 text-sky-300" />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { useDarkMode } from "../hook/useDarkMode";
+import darkLogo from "../assets/darkLogo.png";
+import lightLogo from "../assets/lightLogo.png";
 
 import { FaBars, FaFolder } from "react-icons/fa";
 import { IoPerson, IoMoon, IoSunny } from "react-icons/io5";
@@ -8,27 +9,28 @@ import { IoMdClose } from "react-icons/io";
 import { HiCode } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({ colorTheme, setTheme }) => {
   const [nav, setNav] = useState(false);
 
   const handleClick = () => setNav(!nav);
-
-  const [colorTheme, setTheme] = useDarkMode();
 
   return (
     <header className="bg-bglight dark:bg-bgdark w-full z-10 fixed transition duration-300">
       <nav className="container mx-auto py-6 px-5 lg:px-10">
         <div className="flex justify-between items-center">
           {/* 1. Logo */}
-          <div className="cursor-pointer text-lightprimary dark:text-darkprimary">
+          <div className="cursor-pointer">
             <Link
               to="hero"
               smooth={true}
               duration={500}
               title="Home - Yusof Paciente"
             >
-              <h1 className="font-black text-sm font-arvo">YU</h1>
-              <h1 className="font-black text-sm font-arvo">SOF.</h1>
+              {colorTheme === "light" ? (
+                <img src={darkLogo} alt="/" className="w-10 h-10" />
+              ) : (
+                <img src={lightLogo} alt="/" className="w-10 h-10" />
+              )}
             </Link>
           </div>
 

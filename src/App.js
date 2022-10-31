@@ -5,15 +5,19 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
+import { useDarkMode } from "./hook/useDarkMode";
+
 function App() {
+  const [colorTheme, setTheme] = useDarkMode();
+
   return (
     <div className="font-rubik bg-bglight dark:bg-bgdark transition duration-300">
-      <Navbar />
+      <Navbar colorTheme={colorTheme} setTheme={setTheme} />
       <Hero />
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
+      <Footer colorTheme={colorTheme} />
     </div>
   );
 }
