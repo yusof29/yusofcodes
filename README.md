@@ -1,9 +1,10 @@
 # Yusofcodes
 
-### Personal portfolio website Built and Designed by me - <a href="https://yusofcodes.netlify.app/">yusofcodes.netlify.app</a>
+[Live Site](https://yusofcodes.netlify.app/)
 
 ```
-Built using: React, Tailwind & Netlify
+Personal portfolio website Built and Designed by me.
 ```
 
-![Landing Page](https://raw.githubusercontent.com/juliajohnson18/JuliaCodesGatsby/master/yusofcodesDark.png)
+![Yusofcodes](https://github.com/yusof29/yusofcodes/blob/452176139027b73564f2633323dd5bda93fb5cd3/src/assets/readme/yusofcodesDark.png "Yusofcodes")
+![Yusofcodes](https://github.com/yusof29/yusofcodes/blob/452176139027b73564f2633323dd5bda93fb5cd3/src/assets/readme/yusofcodesLight.png "Yusofcodes")
