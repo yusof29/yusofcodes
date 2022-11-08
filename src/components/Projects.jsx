@@ -35,7 +35,7 @@ const Projects = () => {
             return (
               <div key={project.id} className="group">
                 <img
-                  className="rounded-md mb-7 h-[300px] w-full object-cover transform group-hover:scale-105 transition ease-out duration-300"
+                  className="rounded-md mb-7 h-[300px] w-full object-cover transform group-hover:scale-105 transition ease-out duration-300 drop-shadow-2xl"
                   src={project.img}
                   alt="/"
                 />

@@ -3,25 +3,16 @@ import imagesData from "./assets/imagesData";
 const data = [
   {
     id: 1,
-    img: imagesData.sampleImg,
-    title: "Real-Time Fire Detection System",
+    img: imagesData.flavourFlow,
+    title: "Flavour Flow ",
     description:
-      "Capstone project created for Bureau of Fire Protection that responsible for the prevention and suppression of all destructive fires.",
-    tools: ["React", "Tailwind", "Local Storage"],
-    // site: "https://good-al.netlify.app/",
-    // repo: 'https://github.com/yusof29/goodal'
+      "A website where user can enter any ingredient they have at home. the website will generate a variety of foods you can make with these ingredient.",
+    tools: ["React", "Styled-Components", "API", "Filter"],
+    site: "https://flavourflow.netlify.app/",
+    repo: "https://github.com/yusof29/flavour_flow",
   },
   {
     id: 2,
-    img: imagesData.goodal,
-    title: "Goodall",
-    description: "E-commerce app",
-    tools: ["React", "Tailwind"],
-    site: "https://good-al.netlify.app/",
-    repo: "https://github.com/yusof29/goodal",
-  },
-  {
-    id: 3,
     img: imagesData.weatherCity,
     title: "Weather City",
     description:
@@ -30,12 +21,25 @@ const data = [
     site: "https://weatherct.netlify.app/",
     repo: "https://github.com/yusof29/weathercity",
   },
+  {
+    id: 3,
+    img: imagesData.goodal,
+    title: "Goodall",
+    description:
+      "E-commerce website design that list all of goodal products on offer.",
+    tools: ["React", "Tailwind"],
+    site: "https://good-al.netlify.app/",
+    repo: "https://github.com/yusof29/goodal",
+  },
   // {
   //   id: 4,
   //   img: imagesData.sampleImg,
-  //   title: "Project 4",
+  //   title: "Real-Time Fire Detection System",
   //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optiocorporis.",
+  //     "Capstone project created for Bureau of Fire Protection that responsible for the prevention and suppression of all destructive fires.",
+  //   tools: ["React", "Tailwind", "Local Storage"],
+  //   site: "https://good-al.netlify.app/",
+  //   repo: 'https://github.com/yusof29/goodal'
   // },
 ];
 
