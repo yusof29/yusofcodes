@@ -18,7 +18,11 @@ const Contact = () => {
         </div>
 
         <div className="flex justify-center">
-          <form className="flex flex-col max-w-[600px] w-full">
+          <form
+            method="POST"
+            action="https://getform.io/f/c7cf47dc-ae70-4826-b242-8fc767dd6944"
+            className="flex flex-col max-w-[600px] w-full"
+          >
             <div className="text-center py-6 space-y-2">
               <p className="text-lightsecondary dark:text-darksecondary">
                 Submit the form below or email me at
