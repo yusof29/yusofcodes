@@ -51,11 +51,11 @@ const Projects = () => {
                     Live Site
                   </a>
                 </h3>
-                <div className="py-2 space-x-2">
+                <div className="py-2 flex flex-wrap">
                   {project.tools.map((tool, index) => (
                     <span
                       key={index}
-                      className="border rounded-full py-2 px-3 text-sm border-lightprimary text-lightprimary hover:text-bglight hover:bg-lightprimary dark:border-darkprimary dark:text-darkprimary dark:hover:text-bgdark dark:hover:bg-darkprimary transition ease-in duration-300"
+                      className="m-1 border rounded-full py-2 px-3 text-sm border-lightprimary text-lightprimary hover:text-bglight hover:bg-lightprimary dark:border-darkprimary dark:text-darkprimary dark:hover:text-bgdark dark:hover:bg-darkprimary transition ease-in duration-300"
                     >
                       {tool}
                     </span>
