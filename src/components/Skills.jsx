@@ -3,6 +3,21 @@ import React from "react";
 import { BsCircle } from "react-icons/bs";
 
 const Skills = () => {
+  const skills = [
+    "REACT",
+    "Javascript ES6",
+    "Redux / Redux Toolkit",
+    "HTML & CSS",
+    "Tailwind CSS",
+    "Styled Components",
+    "REST API",
+    "NodeJs",
+    "ExpressJs",
+    "MongoDB",
+    "Mongoose",
+    "Git",
+  ];
+
   return (
     <section name="skills" className="w-full min-h-screen flex items-center">
       <div className="container mx-auto py-6 px-5 lg:px-10">
@@ -19,30 +34,12 @@ const Skills = () => {
 
         <div className="text-lightprimary dark:text-darkprimary font-semibold">
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
-            <li className="flex items-center py-2 tracking-wide">
-              <BsCircle className="mr-2 w-3 text-sky-300" />
-              Javascript ES6
-            </li>
-            <li className="flex items-center py-2 tracking-wide">
-              <BsCircle className="mr-2 w-3 text-sky-300" />
-              REACT
-            </li>
-            <li className="flex items-center py-2 tracking-wide">
-              <BsCircle className="mr-2 w-3 text-sky-300" />
-              Tailwind CSS
-            </li>
-            <li className="flex items-center py-2 tracking-wide">
-              <BsCircle className="mr-2 w-3 text-sky-300" />
-              Styled Components
-            </li>
-            <li className="flex items-center py-2 tracking-wide">
-              <BsCircle className="mr-2 w-3 text-sky-300" />
-              HTML & CSS
-            </li>
-            <li className="flex items-center py-2 tracking-wide">
-              <BsCircle className="mr-2 w-3 text-sky-300" />
-              Git
-            </li>
+            {skills.map((skill, i) => (
+              <li key={i} className="flex items-center py-2 tracking-wide">
+                <BsCircle className="mr-2 w-3 text-sky-300" />
+                {skill}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
