@@ -81,8 +81,7 @@ const Hero = () => {
           </a>
           <a
             className="transition ease-in duration-300 hover:bg-sky-400 flex items-center justify-center gap-2 py-2 px-4 bg-lightsecondary rounded-full text-base dark:bg-bglight text-bglight dark:text-bgdark dark:hover:bg-sky-400"
-            href="../assets/resume/Paciente_Yusof_Resume.pdf"
-            download
+            href="https://drive.google.com/file/d/1Im1vpP2PJQ0JxHpY2Q_pk_ypncCikGI6/view?usp=share_link"
             target="_blank"
             rel="noreferrer noopener"
             title="Download Resume - Yusof Paciente"
