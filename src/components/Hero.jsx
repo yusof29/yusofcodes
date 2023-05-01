@@ -2,6 +2,8 @@ import React from "react";
 
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { ImQuotesLeft } from "react-icons/im";
+import { BsDownload } from "react-icons/bs";
+
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -44,12 +46,12 @@ const Hero = () => {
 
         {/* socials div */}
         <motion.div
-          className="text-lightsecondary dark:text-darksecondary text-2xl flex items-center space-x-8 mt-2 w-full"
+          className="text-lightsecondary dark:text-darksecondary text-2xl flex items-center gap-8 mt-2 w-full"
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5 }}
         >
-          <div className="border-b-2 border-lightsecondary dark:border-darksecondary w-1/3 sm:w-1/6"></div>
+          <div className="border-b-2 border-lightsecondary dark:border-darksecondary w-1/3 sm:w-1/6 hidden sm:block"></div>
           <a
             className="hover:text-[#0072b1] hover:drop-shadow-2xl transition ease-in duration-300 transform hover:scale-105"
             href="https://www.linkedin.com/in/yusofpaciente"
@@ -76,6 +78,17 @@ const Hero = () => {
             title="Facebook - Yusof Paciente"
           >
             <FaFacebook size={28} />
+          </a>
+          <a
+            className="transition ease-in duration-300 hover:bg-sky-400 flex items-center justify-center gap-2 py-2 px-4 bg-lightsecondary rounded-full text-base dark:bg-bglight text-bglight dark:text-bgdark dark:hover:bg-sky-400"
+            href="../assets/resume/Paciente_Yusof_Resume.pdf"
+            download
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Download Resume - Yusof Paciente"
+          >
+            Resume
+            <BsDownload size={17} />
           </a>
         </motion.div>
 
