@@ -4,16 +4,17 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <section name="contact" className="w-full min-h-screen flex items-center">
-      <div className="container mx-auto py-6 px-5 lg:px-10 my-10 lg:my-32">
+    <section name="contact" className="flex min-h-screen w-full items-center">
+      <div className="container mx-auto my-10 px-5 py-6 lg:my-32 lg:px-10">
         <div className="sm:w-3/5">
-          <h2 className="text-2xl lg:text-4xl font-bold text-sky-400 tracking-wider">
+          <h2 className="text-2xl font-bold tracking-wider text-sky-400 lg:text-4xl">
             Let's Build Something Together
           </h2>
-          <p className="text-lightsecondary dark:text-darksecondary my-12 flex">
-            Currently, I am looking for an entry level position as a Front-End
-            Web Developer. Feel free to reach me out.
-            <AiOutlineArrowDown className="ml-3 w-6 h-6 text-bglight bg-lightsecondary dark:bg-darksecondary dark:text-bgdark rounded-full animate-bounce hidden 2xl:block" />
+          <p className="my-12 flex text-lightsecondary dark:text-darksecondary">
+            {/* Currently, I am looking for an entry level position as a Front-End
+            Web Developer. Feel free to reach me out. */}
+            Feel free to reach me out.
+            <AiOutlineArrowDown className="ml-3 hidden h-6 w-6 animate-bounce rounded-full bg-lightsecondary text-bglight dark:bg-darksecondary dark:text-bgdark 2xl:block" />
           </p>
         </div>
 
@@ -21,13 +22,13 @@ const Contact = () => {
           <form
             method="POST"
             action="https://getform.io/f/c7cf47dc-ae70-4826-b242-8fc767dd6944"
-            className="flex flex-col max-w-[600px] w-full"
+            className="flex w-full max-w-[600px] flex-col"
           >
-            <div className="text-center py-6 space-y-2">
+            <div className="space-y-2 py-6 text-center">
               <p className="text-lightsecondary dark:text-darksecondary">
                 Submit the form below or email me at
                 <a
-                  className="text-lightprimary dark:text-darkprimary ml-2 py-1 font-bold tracking-wider border-transparent border-b-2 hover:border-lightprimary dark:hover:border-darksecondary transition ease-in duration-300"
+                  className="ml-2 border-b-2 border-transparent py-1 font-bold tracking-wider text-lightprimary transition duration-300 ease-in hover:border-lightprimary dark:text-darkprimary dark:hover:border-darksecondary"
                   href="mailto:yusofpaciente29@gmail.com"
                   title="Gmail Account"
                 >
@@ -40,24 +41,24 @@ const Contact = () => {
             </div>
 
             <input
-              className="bg-[#ccd6f6] p-3 px-5 rounded-md focus:outline-none focus:ring focus:border-sky-300"
+              className="rounded-md bg-[#ccd6f6] p-3 px-5 focus:border-sky-300 focus:outline-none focus:ring"
               type="text"
               placeholder="Name"
               name="name"
             />
             <input
-              className="bg-[#ccd6f6] p-3 my-4 px-5 rounded-md focus:outline-none focus:ring focus:border-sky-300"
+              className="my-4 rounded-md bg-[#ccd6f6] p-3 px-5 focus:border-sky-300 focus:outline-none focus:ring"
               type="email"
               placeholder="Email"
               name="email"
             />
             <textarea
-              className="bg-[#ccd6f6] p-3 px-5 rounded-md focus:outline-none focus:ring focus:border-sky-300"
+              className="rounded-md bg-[#ccd6f6] p-3 px-5 focus:border-sky-300 focus:outline-none focus:ring"
               rows="10"
               placeholder="Message"
               name="message"
             ></textarea>
-            <button className="bg-sky-400 text-white rounded-lg border-2 px-4 py-3 my-4 mx-auto hover:bg-sky-500 hover:border-sky-400 transition ease-in duration-300">
+            <button className="mx-auto my-4 rounded-lg border-2 bg-sky-400 px-4 py-3 text-white transition duration-300 ease-in hover:border-sky-400 hover:bg-sky-500">
               Submit
             </button>
           </form>

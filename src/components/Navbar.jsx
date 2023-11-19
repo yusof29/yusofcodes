@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import darkLogo from "../assets/darkLogo.png";
 import lightLogo from "../assets/lightLogo.png";
@@ -15,9 +15,9 @@ const Navbar = ({ colorTheme, setTheme }) => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <header className="bg-bglight dark:bg-bgdark w-full z-10 fixed transition duration-300">
-      <nav className="container mx-auto py-6 px-5 lg:px-10">
-        <div className="flex justify-between items-center">
+    <header className="fixed z-10 w-full bg-bglight transition duration-300 dark:bg-bgdark">
+      <nav className="container mx-auto px-5 py-6 lg:px-10">
+        <div className="flex items-center justify-between">
           {/* 1. Logo */}
           <div className="cursor-pointer">
             <Link
@@ -27,9 +27,9 @@ const Navbar = ({ colorTheme, setTheme }) => {
               title="Home - Yusof Paciente"
             >
               {colorTheme === "light" ? (
-                <img src={darkLogo} alt="/" className="w-10 h-10" />
+                <img src={darkLogo} alt="/" className="h-10 w-10" />
               ) : (
-                <img src={lightLogo} alt="/" className="w-10 h-10" />
+                <img src={lightLogo} alt="/" className="h-10 w-10" />
               )}
             </Link>
           </div>
@@ -41,16 +41,16 @@ const Navbar = ({ colorTheme, setTheme }) => {
               onClick={() => setTheme(colorTheme)}
             >
               {colorTheme === "light" ? (
-                <IoSunny className="fill-bgdark bg-darkprimary rounded-full p-1 h-7 w-7 cursor-pointer" />
+                <IoSunny className="h-7 w-7 cursor-pointer rounded-full bg-darkprimary fill-bgdark p-1" />
               ) : (
-                <IoMoon className="fill-bglight bg-lightprimary rounded-full p-1 h-7 w-7 cursor-pointer" />
+                <IoMoon className="h-7 w-7 cursor-pointer rounded-full bg-lightprimary fill-bglight p-1" />
               )}
             </div>
 
-            <ul className="hidden md:flex space-x-8 py-1.5 text-lightprimary dark:text-darkprimary">
+            <ul className="hidden space-x-8 py-1.5 text-lightprimary dark:text-darkprimary md:flex">
               <li className="cursor-pointer">
                 <Link
-                  className="pb-1 border-transparent border-b-4 hover:border-sky-300 transition ease-in duration-300"
+                  className="border-b-4 border-transparent pb-1 transition duration-300 ease-in hover:border-sky-300"
                   to="hero"
                   smooth={true}
                   duration={500}
@@ -60,7 +60,7 @@ const Navbar = ({ colorTheme, setTheme }) => {
               </li>
               <li className="cursor-pointer">
                 <Link
-                  className="pb-1 border-transparent border-b-4 hover:border-sky-300 transition ease-in duration-300"
+                  className="border-b-4 border-transparent pb-1 transition duration-300 ease-in hover:border-sky-300"
                   to="skills"
                   smooth={true}
                   duration={500}
@@ -70,7 +70,7 @@ const Navbar = ({ colorTheme, setTheme }) => {
               </li>
               <li className="cursor-pointer">
                 <Link
-                  className="pb-1 border-transparent border-b-4 hover:border-sky-300 transition ease-in duration-300"
+                  className="border-b-4 border-transparent pb-1 transition duration-300 ease-in hover:border-sky-300"
                   to="projects"
                   smooth={true}
                   duration={500}
@@ -81,7 +81,7 @@ const Navbar = ({ colorTheme, setTheme }) => {
               </li>
               <li className="cursor-pointer">
                 <Link
-                  className="pb-1 border-transparent border-b-4 hover:border-sky-300 transition ease-in duration-300"
+                  className="border-b-4 border-transparent pb-1 transition duration-300 ease-in hover:border-sky-300"
                   to="contact"
                   smooth={true}
                   duration={500}
@@ -95,12 +95,12 @@ const Navbar = ({ colorTheme, setTheme }) => {
           {/* Hamburger */}
           {/* the default state is false, if clicked it will set the state from false to true */}
           {/* !nav (true) means opposite of nav (false) */}
-          <div className="md:hidden text-lightprimary dark:text-darkprimary flex items-center space-x-4">
+          <div className="flex items-center space-x-4 text-lightprimary dark:text-darkprimary md:hidden">
             <div className="md:hidden" onClick={() => setTheme(colorTheme)}>
               {colorTheme === "light" ? (
-                <IoSunny className="fill-bgdark bg-darkprimary rounded-full p-1 h-7 w-7 cursor-pointer" />
+                <IoSunny className="h-7 w-7 cursor-pointer rounded-full bg-darkprimary fill-bgdark p-1" />
               ) : (
-                <IoMoon className="fill-bglight bg-lightprimary rounded-full p-1 h-7 w-7 cursor-pointer" />
+                <IoMoon className="h-7 w-7 cursor-pointer rounded-full bg-lightprimary fill-bglight p-1" />
               )}
             </div>
             <FaBars onClick={handleClick} size={26} />
@@ -111,7 +111,7 @@ const Navbar = ({ colorTheme, setTheme }) => {
           {/* is nav true? .. the state is false, so overlay will not show */}
           {nav ? (
             <div
-              className="bg-black/10 dark:bg-black/50 w-full h-screen z-10 fixed top-0 left-0"
+              className="fixed left-0 top-0 z-10 h-screen w-full bg-black/10 dark:bg-black/50"
               onClick={handleClick}
             ></div>
           ) : null}
@@ -120,8 +120,8 @@ const Navbar = ({ colorTheme, setTheme }) => {
           <div
             className={
               nav
-                ? "bg-bglight/70 dark:bg-bgdark/40 backdrop-blur-sm w-[250px] duration-300 h-screen z-10 fixed top-0 right-0"
-                : "bg-bglight/70 dark:bg-bgdark/40 backdrop-blur-sm w-[250px] duration-300 h-screen z-10 fixed top-0 right-[-100%]"
+                ? "fixed right-0 top-0 z-10 h-screen w-[250px] bg-bglight/70 backdrop-blur-sm duration-300 dark:bg-bgdark/40"
+                : "fixed right-[-100%] top-0 z-10 h-screen w-[250px] bg-bglight/70 backdrop-blur-sm duration-300 dark:bg-bgdark/40"
             }
           >
             <div className="p-4 text-lightprimary dark:text-darkprimary">
@@ -130,7 +130,7 @@ const Navbar = ({ colorTheme, setTheme }) => {
 
             <nav className="flex flex-col items-center">
               <ul className="p-5 text-lightprimary dark:text-darkprimary">
-                <li className="text-xl flex items-center py-4">
+                <li className="flex items-center py-4 text-xl">
                   <Link
                     className="flex flex-row items-center"
                     onClick={handleClick}
@@ -143,7 +143,7 @@ const Navbar = ({ colorTheme, setTheme }) => {
                   </Link>
                 </li>
 
-                <li className="text-xl flex items-center py-4">
+                <li className="flex items-center py-4 text-xl">
                   <Link
                     className="flex flex-row items-center"
                     onClick={handleClick}
@@ -157,7 +157,7 @@ const Navbar = ({ colorTheme, setTheme }) => {
                   </Link>
                 </li>
 
-                <li className="text-xl flex items-center py-4">
+                <li className="flex items-center py-4 text-xl">
                   <Link
                     className="flex flex-row items-center"
                     onClick={handleClick}
@@ -171,7 +171,7 @@ const Navbar = ({ colorTheme, setTheme }) => {
                   </Link>
                 </li>
 
-                <li className="text-xl flex items-center py-4">
+                <li className="flex items-center py-4 text-xl">
                   <Link
                     className="flex flex-row items-center"
                     onClick={handleClick}
