@@ -36,7 +36,7 @@ const Hero = () => {
               animate={{ y: 0 }}
               transition={{ duration: 1.5 }}
             >
-              Software <span className="text-sky-400">Engineer</span>
+              {/* Software <span className="text-sky-400">Engineer</span> */}
             </motion.h1>
           </div>
 
