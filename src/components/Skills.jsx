@@ -2,17 +2,19 @@ import { BsCircle } from "react-icons/bs";
 
 const Skills = () => {
   const skills = [
-    "REACTS",
+    "REACT",
+    "TypeScript",
     "Javascript ES6",
     "Redux / Redux Toolkit",
-    "HTML & CSS",
-    "Tailwind CSS",
-    "Styled Components",
+    "TanStack Query",
     "REST API",
     "NodeJs",
     "ExpressJs",
     "MongoDB",
     "Mongoose",
+    "HTML & CSS",
+    "Tailwind CSS",
+    "Styled Components",
     "Git",
   ];
 

@@ -3,18 +3,28 @@ import imagesData from "./assets/imagesData";
 const data = [
   {
     id: 0,
+    img: imagesData.gt,
+    title: "The Golden Trip",
+    description:
+      "Developed a customizable itinerary creator website for travelers in the Philippines. Implemented user login systems, an email system, and functionality for selecting multiple activities, accommodations, dates and the number of travelers.",
+    tools: ["React", "Tailwind", "Redux Toolkit", "React Hook Form"],
+    site: "https://thegoldentrip.com/",
+    repo: "",
+  },
+  {
+    id: 1,
     img: imagesData.goodal,
     title: "Goodall",
     description:
-      "E-commerce website design that list all of goodal products on offer. Built using MERN stack, Tailwind Css for the styling and Redux Toolkit for state management",
+      "Developed an e-commerce website with user and admin login systems. Features include cart management with automatic total payment calculations for users, and CRUD functionality for admins to manage products.",
     tools: ["React", "Tailwind", "MERN", "Redux-Toolkit"],
     site: "https://good-goodal.netlify.app/",
     repo: "https://github.com/yusof29/goodal_mern",
   },
   {
-    id: 1,
+    id: 2,
     img: imagesData.flavourFlow,
-    title: "Flavour Flow ",
+    title: "Flavour Flow",
     description:
       "A website where user can enter any ingredient they have at home. the website will generate a variety of foods you can make with these ingredient.",
     tools: ["React", "Styled-Components", "API", "Filter"],
@@ -22,7 +32,7 @@ const data = [
     repo: "https://github.com/yusof29/flavour_flow",
   },
   {
-    id: 2,
+    id: 3,
     img: imagesData.weatherCity,
     title: "Weather City",
     description:
